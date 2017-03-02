@@ -1,11 +1,10 @@
 FROM samueldebruyn/debian-git:latest
 
 RUN apt-get update -yq && apt-get install -yqq \
-    python \
-    emacs
+    python
 
-RUN git clone https://github.com/DidelotK/docker docker
+RUN git clone https://github.com/Sanais/docker_project docker
 CMD cd /docker && git pull
 
-CMD python docker/script.py
+CMD python docker_project/script.py
 
