@@ -6,5 +6,5 @@ RUN apt-get update -yq && apt-get install -yqq \
 RUN git clone https://github.com/Sanais/docker_project docker
 CMD cd /docker && git pull
 
-CMD python docker_project/script.py
+CMD python docker_project/script2.py
 
